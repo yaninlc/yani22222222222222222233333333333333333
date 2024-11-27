@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Página Principal</h1>
+        <div class="api-section">
+            <button onclick="window.location.href='correo.html'">API Correo</button>
+            <button onclick="window.location.href='imagenes.html'">API Imágenes</button>
+            <button onclick="window.location.href='Cotizaciones.html'">API Opcional</button>
+        </div>
+        <div id="api-result"></div>
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("tkMyALqXKtUfxbB0H"); // Inicializa con tu clave pública
+        })();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
